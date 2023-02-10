@@ -46,3 +46,127 @@
     transform: scale(.5);
 }
 
+/* esercizio 6 */
+
+.ex-6-img:hover{
+    filter: grayscale(1)
+}
+
+/* esercizio 7 */
+
+.ex-7-img:hover{
+    filter: blur(1);
+    filter: sepia(1);
+}
+
+.ex-7-img{
+    transition: 5s;
+}
+
+/* esercizio 8 */
+
+.ex-8-img{
+    transition: 4s;
+}
+
+.ex-8-img:hover{
+    filter: blur(1);
+    filter: sepia(1);
+    border-radius: 50px;
+}
+
+/* esercizio 9 */
+
+.ex-9-img{
+    transition: 5s;
+}
+
+.ex-9-img:hover{
+    filter: blur(1);
+    filter: sepia(1);
+    border-radius: 50px;
+    transform: scale(1.5);
+}
+
+/* esercizio 10 */
+
+.ex-10-icon{
+   animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(1turn);
+    }
+}
+
+/* esercizio 11 */
+
+.ex-11-icon:hover {
+    animation: semi-around 5s infinite linear;
+}
+@keyframes semi-around {
+    0% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(280deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: push 2s infinite linear;
+}
+
+@keyframes push {
+    0%{
+        position: absolute;
+        left: 50px;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: pull 2s infinite linear;
+}
+
+@keyframes pull {
+    0%{
+        position: absolute;
+        right: 50px;
+    }
+}
+
+/* esercizio 13 */
+
+.ex-13-top-white {
+    animation: firstTurn 4s infinite linear;
+}
+@keyframes firstTurn {
+    0% {
+        left: 10%;
+    }
+    
+    30%{
+        left: 30%;
+    }
+
+    45%{
+        left: 50%;
+        top: -10%;
+    }
+
+    60%{
+        left: 80%;
+        top: -25%;
+    }
+
+    70%{
+        left: 80%;
+        top: -50%;
+    }
+}
